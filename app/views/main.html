@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-12">
+    <h4>Simple Rendering Test</h4>
+
+    <input ng-model="framework"/>
+    <fast-ng framework="framework"></fast-ng>
+    Rendering with traditional AngularJs {{framework}}
+  </div>
+</div>
+
+<hr/>
+
+<div class="row">
+  <div class="col-md-6">
+    <h4>Test (1500 results) ReactJS</h4>
+
+    <fast-list data="data"></fast-list>
+  </div>
+
+  <div class="col-md-6">
+    <h4>Test (1500 results) AngularJS</h4>
+    <table>
+      <tr ng-repeat="datr in data.angular" ng-click="clickHandler()">
+        <td>{{ datr[0] }}</td>
+        <td>{{ datr[1] }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <button ng-click="refresh('react')">Refresh Data with ReactJS</button>
+  </div>
+
+  <div class="col-md-3 col-md-offset-3">
+    <button ng-click="refresh('angular')">Refresh Data with AngularJS</button>
+  </div>
+</div>
