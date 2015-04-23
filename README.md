@@ -1,4 +1,4 @@
-# reactjs_vs_angularjs
+# ReactJS vs AngularJS
 This project will show you the difference of rendering performance on large number of items between ReactJS and AngularJS.
 
 #How to install?
